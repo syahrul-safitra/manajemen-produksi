@@ -11,8 +11,6 @@ use App\Models\Stok;
 use App\Models\User;
 
 use Illuminate\Support\Facades\Route;
-use function PHPUnit\Framework\isNull;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -105,5 +103,10 @@ Route::resource('user', UserController::class)->middleware('auth');
 
 Route::get('login', [AuthController::class, 'index'])->middleware('guest')->name('login');
 
+// Route::post('login', [AuthController::class, 'auth'])->middleware('guest');
 Route::post('login', [AuthController::class, 'auth'])->middleware('guest');
 Route::post('logout', [AuthController::class, 'logout'])->middleware('auth');
+
+Route::get('test', function() {
+    return view('order.stuk');
+});

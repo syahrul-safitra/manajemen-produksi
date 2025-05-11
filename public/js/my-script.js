@@ -10,4 +10,6 @@ $(document).ready(function () {
 
         inputTotal.val(totalHarga);
     });
+
+    $("#table").dataTable();
 });

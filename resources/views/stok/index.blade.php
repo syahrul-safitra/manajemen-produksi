@@ -25,7 +25,7 @@
             <div class="card">
                 <div class="table-responsive table-hover">
 
-                    <table class="table align-items-center table-flush">
+                    <table class="table align-items-center table-flush" id="table">
                         <thead class="thead-light">
                             <tr>
                                 <th>No</th>
